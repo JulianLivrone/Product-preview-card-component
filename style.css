@@ -9,6 +9,9 @@ body {
   background-color: hsl(30, 38%, 92%);
   padding: 1em;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -95,18 +98,12 @@ body {
   background-color: hsl(158, 36%, 17%);
 }
 
-@media (min-width: 1380px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media (min-width: 700px) {
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 41rem; /* Way better to work with rem because using 50% for example broke because of the dimensions of the image */
   }
 
   .img-product-mobile {
